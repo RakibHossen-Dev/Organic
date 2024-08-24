@@ -18,11 +18,24 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+
     <style>
       .font-manrope {
         font-family: "Manrope", sans-serif;
       }
     </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              body: "rgb(248 , 246 ,243)",
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body class="font-manrope">
     <!--------------- header ----------------->
@@ -45,22 +58,45 @@
           <i class="fa-solid fa-cart-shopping"></i>
           <i class="fa-solid fa-user"></i>
           <i
-            class="fa-solid fa-bars bg-green-500 text-xl px-3 py-2 cursor-pointer rounded-lg lg:hidden"
+            class="fa-solid fa-bars bg-lime-500 text-xl px-3 py-2 cursor-pointer rounded-lg lg:hidden"
           ></i>
         </div>
       </nav>
-      <!-- banner -->
-      <section class="bg-[url('/images/leaf01.png')] bg-gray-100">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum
-          aperiam! Culpa explicabo, vitae aut quo nihil alias nostrum itaque
-          facere, distinctio sint adipisci repudiandae, suscipit sequi cum
-          fugit. Alias.
-        </p>
-      </section>
     </header>
     <!--------------------- main ---------------->
-    <main></main>
+    <main>
+      <!-- banner -->
+      <section
+        class="bg-[url('/images/leaf01.png')] bg-no-repeat bg-right-bottom bg-gray-100 py-10"
+      >
+        <div class="w-full h-full bg-body bg-opacity-90"></div>
+        <div
+          class="flex md:flex-row flex-col items-center justify-center gap-10 lg:container mx-auto w-11/12"
+        >
+          <div class="flex-1">
+            <img class="w-full" src="images/bannerbg.png" alt="" />
+          </div>
+          <div
+            class="flex-1 space-y-3 flex flex-col justify-center md:justify-start text-center md:text-start"
+          >
+            <h4 class="text-2xl font-bold">Best Quality Products</h4>
+            <h3 class="text-6xl font-extrabold">Join The Organic Movement!</h3>
+            <p class="text-gray-600">
+              Join the Organic Movement and embrace a healthier, more
+              sustainable lifestyle. Together, we can make a positive impact on
+              the environment and our well-being.
+            </p>
+            <div>
+              <button
+                class="bg-lime-600 px-5 py-3 text-white text-xl rounded-lg"
+              >
+                <i class="fa-solid fa-cart-shopping"></i> Shop Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!----------------- footer ----------------->
     <footer></footer>
   </body>
