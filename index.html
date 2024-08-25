@@ -35,7 +35,10 @@
         theme: {
           extend: {
             colors: {
-              body: "rgb(248 , 246 ,243)",
+              hello_color: "rgb(248, 246, 243)",
+            },
+            backgroundImage: {
+              bg_banner: "url('./images/leaf01.png')",
             },
           },
         },
@@ -71,34 +74,33 @@
     <!--------------------- main ---------------->
     <main>
       <!-- banner -->
-      <section
-        class="bg-[url('/images/leaf01.png')] bg-no-repeat bg-right-bottom bg-gray-100 py-10"
-      >
-        <div class="w-full h-full bg-body bg-opacity-90"></div>
-        <div
-          class="flex md:flex-row flex-col items-center justify-center gap-10 lg:container mx-auto w-11/12"
-        >
-          <div class="flex-1">
-            <img class="w-full" src="images/bannerbg.png" alt="" />
-          </div>
+      <section class="h-[100vh] bg-bg_banner bg-no-repeat bg-right-bottom">
+        <div class="w-full h-full bg-hello_color bg-opacity-90">
           <div
-            class="flex-1 space-y-3 flex flex-col justify-center md:justify-start text-center md:text-start"
+            class="flex md:flex-row flex-col items-center justify-center gap-10 lg:container mx-auto w-11/12 py-20"
           >
-            <h4 class="text-2xl font-bold">Best Quality Products</h4>
-            <h3 class="md:text-6xl text-4xl font-extrabold">
-              Join The Organic Movement!
-            </h3>
-            <p class="text-gray-600">
-              Join the Organic Movement and embrace a healthier, more
-              sustainable lifestyle. Together, we can make a positive impact on
-              the environment and our well-being.
-            </p>
-            <div>
-              <button
-                class="bg-lime-600 px-5 py-3 text-white text-xl rounded-lg"
-              >
-                <i class="fa-solid fa-cart-shopping"></i> Shop Now
-              </button>
+            <div class="flex-1">
+              <img class="w-full" src="images/bannerbg.png" alt="" />
+            </div>
+            <div
+              class="flex-1 space-y-3 flex flex-col justify-center md:justify-start text-center md:text-start"
+            >
+              <h4 class="text-2xl font-bold">Best Quality Products</h4>
+              <h3 class="md:text-6xl text-4xl font-extrabold">
+                Join The Organic Movement!
+              </h3>
+              <p class="text-gray-600">
+                Join the Organic Movement and embrace a healthier, more
+                sustainable lifestyle. Together, we can make a positive impact
+                on the environment and our well-being.
+              </p>
+              <div>
+                <button
+                  class="bg-lime-600 px-5 py-3 text-white text-xl rounded-lg"
+                >
+                  <i class="fa-solid fa-cart-shopping"></i> Shop Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
